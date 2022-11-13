@@ -82,7 +82,18 @@
 
 <h2 id="privacy-policy">Privacy Policy</h2>
 <p>&nbsp;</p>
-<p>Email Thread Follow Up requires access to certain scopes to work. gmail.addons.execute is used for executing the addon. gmail.readonly is needed to select the emails you tag for follow up. gmail.compose is required for composing the follow up. script.scriptapp is used to store follow up settings within the addon. userinfo.email is used so the follow up emails sent by the addon say they are from you. gmail.modify is used to attach the follow up as the next message in to the email thread. script.external_request is for connecting to Stripe to check whether your email has subscribed to Premium Plan. script.locale is used to get your current timezone for follow ups to be based on.</p>
+<p>Email Thread Follow Up requires access to certain scopes to work. 
+<ul>
+<li>gmail.addons.execute is used for executing the addon.</li>
+<li>gmail.readonly is needed to select the emails you tag for follow up.</li>
+<li>gmail.compose is required for composing the follow up.</li>
+<li>gmail.modify is used to remove the label from email thread when all oneliner follow ups have been used.</li>
+<li>script.scriptapp is used to run the script on the every midnight to check whether a follow up trigger needs to be scheduled for the following day.</li>
+<li>userinfo.email is used so the follow up emails sent by the addon say they are from you.</li>
+<li>script.external_request is for connecting to Stripe to check whether your email has subscribed to Premium Plan.</li>
+<li>script.locale is used to get your current timezone for follow ups to be based on.</li>
+</ul>
+</p>
 <p>&nbsp;</p>
 <p>Email Thread Follow Up's use and transfer to any other app of information received from Google APIs will adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the <a href="https://support.google.com/cloud/answer/9110914#explain-types">Limited Use Requirements</a>.</p>
 <p>&nbsp;</p>
