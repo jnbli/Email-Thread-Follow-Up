@@ -82,16 +82,7 @@
 
 <h2 id="privacy-policy">Privacy Policy</h2>
 <p>&nbsp;</p>
-<p>Email Thread Follow Up requires access to certain scopes to work. 
-<ul>
-<li>gmail.addons.execute is used for executing the addon.</li>
-<li>gmail.modify is used to read the emails you tag for follow up to see if some follow ups have been used, compose a follow up which has not been used for the particular email thread, and remove the label from email thread when all oneliner follow ups have been used.</li>
-<li>script.scriptapp is used to run the script on the every midnight to check whether a follow up trigger needs to be scheduled for the following day.</li>
-<li>userinfo.email is used so the follow up emails sent by the addon say they are from you.</li>
-<li>script.external_request is for querying Stripe customer API to check whether your email has subscribed to Premium Plan subscription.</li>
-<li>script.locale is used to get your current timezone for follow ups to be based on.</li>
-</ul>
-</p>
+<p>Email Thread Follow Up will only use Gmail access to read the emails tagged for follow up, compose and send the follow ups using your email as the sender, remove a label from an email thread after all oneliner follow ups are used, and check your email with Stripe Customer and Subscriptions APIs to see whether you are on the Free Plan or subscribed to the Premium Plan. Background running will be used to run the addon every night at 11:30PM to check whether a follow up trigger needs to be scheduled for the following day. Script locale will be used to tailor the addon to your current timezone.</p>
 <p>&nbsp;</p>
 <p>Email Thread Follow Up's use and transfer to any other app of information received from Google APIs will adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the <a href="https://support.google.com/cloud/answer/9110914#explain-types">Limited Use Requirements</a>.</p>
 <p>&nbsp;</p>
